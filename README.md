@@ -27,10 +27,16 @@ docker run --rm -v $(pwd):/app -w /app mcr.microsoft.com/dotnet/sdk:9.0 dotnet n
 ```
 
 Step 3:
+- Change write permissions of the project directory created on your local host machine.
+```bash
+sudo chmod -R o+w ArtMeAPI
+```
+
 - Navigate to the Project Directory:
 
 ```bash
 cd ArtMeAPI
 ```
 
-
+Step 4:
+- 
