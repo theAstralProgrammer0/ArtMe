@@ -22,12 +22,14 @@ Step 2:
 docker run --rm -v $(pwd):/app -w /app mcr.microsoft.com/dotnet/sdk:9.0 dotnet new webapi -o <name_of_project>
 ```
 In our case:
+
 ```bash
 docker run --rm -v $(pwd):/app -w /app mcr.microsoft.com/dotnet/sdk:9.0 dotnet new webapi -o ArtMeAPI
 ```
 
 Step 3:
 - Change ownership of the project directory created on your local host machine to make edits to the files in it.
+
 ```bash
 sudo chown -R $USER ArtMeAPI
 ```
@@ -39,4 +41,14 @@ cd ArtMeAPI
 ```
 
 Step 4:
-- 
+- Create a new directory for storing schemas called `Models`
+
+```bash
+mkdir Models
+'''
+
+- Navigate into ```Models```
+
+```bash
+cd Models
+```
